@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+        <script> /*함수는 불규칙적인 반복*/
+            function two(){
+                document.write('<li>3</li>');
+            }
+            document.write('<li>2-1</li>');
+            two();
+            document.write('<li>2-1</li>');
+            two();
+
+        </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script>
+        function one(){
+            document.write(1+1+'<br>');
+        }
+        one(); //단순히 출력
+
+        function sum(left,right){ //메개변수
+            document.write(left+right+'<br>');
+        }
+        sum(2,3); //입력 과 출력 아규먼트
+    </script>
+
+    <h2>return</h2>
+    <script>
+        function sum2(left,right){
+            return left + right; // 위와 차이 - 결과를 받아서 다양하게 표현가능
+        }
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style= "color:red">'+sum2(2,3)+'</div>');
+    </script>
+</body>
+</html>
